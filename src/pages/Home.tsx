@@ -4,8 +4,23 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
+import { useEffect, useState } from "react";
+
+const imageUrl = ["/one.jpeg", "/two.jpeg", "/three.jpeg", "/four.jpeg", "/five.jpeg", "/six.jpeg", "/seven.jpeg"];
 
 export default function HomePage() {
+	const [index, setIndex] = useState(0);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setIndex((prevIndex) => (prevIndex + 1) % imageUrl.length);
+		}, 3000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	}, [index]);
+
 	return (
 		<div className="min-h-screen bg-white">
 			{/* Header */}
@@ -259,10 +274,16 @@ export default function HomePage() {
 							className="relative">
 							<div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
 								<img
-									src="/placeholder.svg?height=500&width=600"
+									src={imageUrl[index]}
 									alt="VIP Living Centers facility"
-									className="object-cover"
+									className="object-cover w-full h-full"
 								/>
+							</div>
+							<div className="absolute flex gap-1 left-[50%]">
+								{Array.from({length: imageUrl.length}).map((_, idx)=>(
+									<div key={idx} className="w-2 h-2 bg-red-100 rounded-full">
+									</div>
+								))}
 							</div>
 						</motion.div>
 					</div>
