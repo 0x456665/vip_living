@@ -34,7 +34,7 @@ export default function ServicesPage() {
 				"Toileting Assistance",
 			],
 			color: "emerald",
-			img: "/placeholder.svg?height=300&width=400",
+			img: "/services/personal.jpg",
 		},
 		{
 			icon: Stethoscope,
@@ -49,7 +49,7 @@ export default function ServicesPage() {
 				"Emergency Response",
 			],
 			color: "blue",
-			img: "/placeholder.svg?height=300&width=400",
+			img: "/services/health.jpg",
 		},
 		{
 			icon: Utensils,
@@ -259,7 +259,7 @@ export default function ServicesPage() {
 										<img
 											src={service.img || "/placeholder.svg"}
 											alt={service.title}
-											className="object-cover transition-transform duration-500 hover:scale-110"
+											className="object-cover object-center transition-transform duration-500 hover:scale-110"
 										/>
 										<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 									</div>

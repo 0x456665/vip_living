@@ -6,7 +6,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { useEffect, useState } from "react";
 
-const imageUrl = ["/one.jpeg", "/two.jpeg", "/three.jpeg", "/four.jpeg", "/five.jpeg", "/six.jpeg", "/seven.jpeg"];
+const imageUrl = [
+	"/one.jpeg",
+	"/two.jpeg",
+	"/three.jpeg",
+	"/four.jpeg",
+	"/five.jpeg",
+	"/six.jpeg",
+	"/seven.jpeg",
+];
 
 export default function HomePage() {
 	const [index, setIndex] = useState(0);
@@ -278,12 +286,15 @@ export default function HomePage() {
 									alt="VIP Living Centers facility"
 									className="object-cover w-full h-full"
 								/>
-							</div>
-							<div className="absolute flex gap-1 left-[50%]">
-								{Array.from({length: imageUrl.length}).map((_, idx)=>(
-									<div key={idx} className="w-2 h-2 bg-red-100 rounded-full">
-									</div>
-								))}
+								<div className="absolute flex gap-1 top-[95%] left-[50%]">
+									{Array.from({ length: imageUrl.length }).map((_, idx) => (
+										<div
+											key={idx}
+											className={`w-3 h-3 rounded-full ${
+												index === idx ? "bg-white" : "bg-gray-300/60"
+											}`}></div>
+									))}
+								</div>
 							</div>
 						</motion.div>
 					</div>

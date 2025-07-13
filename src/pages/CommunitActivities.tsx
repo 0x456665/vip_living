@@ -82,9 +82,9 @@ export default function CommunityActivitiesPage() {
 			<section className="relative pt-24 pb-20 overflow-hidden">
 				<div className="absolute inset-0">
 					<img
-						src="/images/community-hero.png"
+						src="/community/20903.jpg"
 						alt="Community & Activities at VIP Living Centers"
-						className="object-cover"
+						className="object-cover w-full h-full"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 to-slate-900/30" />
 				</div>
