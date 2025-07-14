@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import {
 	ArrowRight,
@@ -18,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import ctaBacground from "../../public/services/trees.jpg";
 
 export default function ServicesPage() {
 	const services = [
@@ -64,7 +63,7 @@ export default function ServicesPage() {
 				"Nutritional Planning",
 			],
 			color: "orange",
-			img: "/placeholder.svg?height=300&width=400",
+			img: "/services/lifestyle.jpg",
 		},
 		{
 			icon: Home,
@@ -79,7 +78,7 @@ export default function ServicesPage() {
 				"Common Area Upkeep",
 			],
 			color: "purple",
-			img: "/placeholder.svg?height=300&width=400",
+			img: "/services/full-shot-man-pushing-elevator-button.jpg",
 		},
 		{
 			icon: Users,
@@ -94,7 +93,7 @@ export default function ServicesPage() {
 				"Special Events",
 			],
 			color: "teal",
-			img: "/placeholder.svg?height=300&width=400",
+			img: "/services/nutrition.jpg",
 		},
 		{
 			icon: Shield,
@@ -109,7 +108,7 @@ export default function ServicesPage() {
 				"On-Call Support",
 			],
 			color: "red",
-			img: "/placeholder.svg?height=300&width=400",
+			img: "/services/service.jpeg",
 		},
 	];
 
@@ -255,11 +254,11 @@ export default function ServicesPage() {
 									className={`relative ${
 										index % 2 === 1 ? "lg:col-start-1" : ""
 									}`}>
-									<div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-xl">
+									<div className="relative w-full h-90 rounded-2xl overflow-hidden shadow-xl">
 										<img
 											src={service.img || "/placeholder.svg"}
 											alt={service.title}
-											className="object-cover object-center transition-transform duration-500 hover:scale-110"
+											className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-110"
 										/>
 										<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 									</div>
@@ -318,7 +317,14 @@ export default function ServicesPage() {
 			</section>
 
 			{/* CTA Section */}
-			<section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+			<section 
+			style={{
+				backgroundImage: `url(${ctaBacground})`,
+				backgroundPosition: "center",
+				backgroundSize: "cover",
+				backgroundAttachment: "fixed"
+			}}
+			className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
 				<div className="container mx-auto px-4 text-center">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}

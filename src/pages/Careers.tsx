@@ -174,7 +174,14 @@ export default function CareersPage() {
 			<Header />
 
 			{/* Hero Section */}
-			<section className="relative pt-24 pb-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50">
+			<section
+				// style={{
+				// 	backgroundImage: `url('https://viplivingcenters.com/wp-content/themes/divi-master/img/headers/header-sitting.jpg')`,
+				// 	backgroundSize: "auto",
+				// 	backgroundAttachment: "fixed",
+				// 	backgroundPosition: "center",
+				// }}
+				className="relative pt-24 pb-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50">
 				<div className="container mx-auto px-4">
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<motion.div
@@ -218,9 +225,9 @@ export default function CareersPage() {
 							className="relative">
 							<div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
 								<img
-									src="/placeholder.svg?height=500&width=600"
+									src="https://viplivingcenters.com/wp-content/themes/divi-master/img/headers/header-sitting.jpg"
 									alt="VIP Living Centers team members"
-									className="object-cover"
+									className="object-cover w-full h-full "
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 							</div>
@@ -321,7 +328,6 @@ export default function CareersPage() {
 								<img
 									src="/placeholder.svg?height=400&width=500"
 									alt="VIP Living Centers workplace culture"
-									
 									className="object-cover"
 								/>
 							</div>

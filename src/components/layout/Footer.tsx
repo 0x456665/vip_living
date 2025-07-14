@@ -1,7 +1,11 @@
 import { Home, Phone, Mail, MapPin } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function Footer() {
+
+	const [currentYear, _] = useState(new Date().getFullYear());
+
 	return (
 		<footer className="bg-slate-900 text-slate-300 py-12">
 			<div className="container mx-auto px-4">
@@ -92,7 +96,7 @@ export function Footer() {
 
 				<div className="border-t border-slate-800 pt-8 text-center">
 					<p className="text-sm text-slate-500">
-						© 2024 VIP Living Centers. All rights reserved. | Licensed Assisted Living
+						© {currentYear} VIP Living Centers. All rights reserved. | Licensed Assisted Living
 						Facility
 					</p>
 				</div>

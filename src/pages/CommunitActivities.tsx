@@ -25,7 +25,7 @@ export default function CommunityActivitiesPage() {
 				"Live music performances, sing-alongs, and therapeutic music sessions that engage and uplift our residents",
 			schedule: "Daily at 3:00 PM",
 			color: "purple",
-			image: "/placeholder.svg?height=250&width=350",
+			image: "/activities/music.jpeg",
 		},
 		{
 			icon: Palette,
@@ -34,7 +34,7 @@ export default function CommunityActivitiesPage() {
 				"Creative workshops including painting, pottery, and seasonal crafts to stimulate creativity and self-expression",
 			schedule: "Tuesdays & Thursdays",
 			color: "pink",
-			image: "/placeholder.svg?height=250&width=350",
+			image: "/activities/art.jpeg",
 		},
 		{
 			icon: Book,
@@ -43,7 +43,7 @@ export default function CommunityActivitiesPage() {
 				"Engaging book discussions, storytelling sessions, and trivia competitions to keep minds sharp and active",
 			schedule: "Wednesdays at 10:00 AM",
 			color: "blue",
-			image: "/placeholder.svg?height=250&width=350",
+			image: "/activities/book.jpeg",
 		},
 		{
 			icon: Dumbbell,
@@ -52,7 +52,7 @@ export default function CommunityActivitiesPage() {
 				"Therapeutic gardening and bonsai cultivation classes that provide peaceful, meditative activities",
 			schedule: "Monday & Friday",
 			color: "green",
-			image: "/placeholder.svg?height=250&width=350",
+			image: "/activities/bonsai.jpeg",
 		},
 		{
 			icon: Gamepad2,
@@ -61,7 +61,7 @@ export default function CommunityActivitiesPage() {
 				"Watching games together, fantasy football leagues, and sports-related activities for sports enthusiasts",
 			schedule: "Game Days",
 			color: "orange",
-			image: "/placeholder.svg?height=250&width=350",
+			image: "/activities/sport.jpeg",
 		},
 		{
 			icon: Monitor,
@@ -70,7 +70,7 @@ export default function CommunityActivitiesPage() {
 				"ZOOM sessions for virtual visits with family and participation in online gourmet cooking classes",
 			schedule: "As Scheduled",
 			color: "indigo",
-			image: "/placeholder.svg?height=250&width=350",
+			image: "/activities/tech.jpeg",
 		},
 	];
 
@@ -168,7 +168,7 @@ export default function CommunityActivitiesPage() {
 										<img
 											src={activity.image || "/placeholder.svg"}
 											alt={activity.title}
-											className="object-cover transition-transform duration-500 group-hover:scale-110"
+											className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
 										/>
 										<div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
 										<div
@@ -243,9 +243,9 @@ export default function CommunityActivitiesPage() {
 							className="relative">
 							<div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-xl">
 								<img
-									src="/placeholder.svg?height=400&width=500"
+									src="/activities/wellness.jpeg"
 									alt="Health and wellness at VIP Living Centers"
-									className="object-cover"
+									className="object-cover w-full h-full"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 							</div>
@@ -308,7 +308,7 @@ export default function CommunityActivitiesPage() {
 							className="relative order-2 lg:order-1">
 							<div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-xl">
 								<img
-									src="/placeholder.svg?height=400&width=500"
+									src="/activities/culture.jpeg"
 									alt="Our culture at VIP Living Centers"
 									className="object-cover"
 								/>

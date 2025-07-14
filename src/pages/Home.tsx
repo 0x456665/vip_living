@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { useEffect, useState } from "react";
+import { Footer } from "@/components/layout/Footer";
+import Testimonial from "@/components/home/Testimonial";
 
 const imageUrl = [
 	"/one.jpeg",
@@ -15,6 +17,12 @@ const imageUrl = [
 	"/six.jpeg",
 	"/seven.jpeg",
 ];
+
+const testimonial = {
+	testimonial:
+		"My uncle spent his last years surrounded by caring staff at VIP Living Center. It was such an incredible experience to watch them lavished their attention on him. Now, a decade later, when it became clear that my aunt can no longer live by herself, we are grateful That VIP is again opening their door to our family. Thank you!",
+	name: "The Pannel Family",
+};
 
 export default function HomePage() {
 	const [index, setIndex] = useState(0);
@@ -108,7 +116,7 @@ export default function HomePage() {
 								<img
 									src="/low-angle-smiley-senior-couple-with-coffee-cups.jpg"
 									alt="VIP Living Centers - Happy resident"
-									className="object-cover h-full w-full"
+									className="object-cover object-center h-full w-full"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 							</div>
@@ -286,7 +294,7 @@ export default function HomePage() {
 									alt="VIP Living Centers facility"
 									className="object-cover w-full h-full"
 								/>
-								<div className="absolute flex gap-1 top-[95%] left-[50%]">
+								<div className="absolute flex gap-1 top-[95%] left-[35%] lg:left-[50%]">
 									{Array.from({ length: imageUrl.length }).map((_, idx) => (
 										<div
 											key={idx}
@@ -300,6 +308,12 @@ export default function HomePage() {
 					</div>
 				</div>
 			</section>
+
+			{/* testimonial section */}
+			<Testimonial
+				testimonial={testimonial.testimonial}
+				name={testimonial.name}
+			/>
 
 			{/* Contact Section */}
 			<section
@@ -380,24 +394,7 @@ export default function HomePage() {
 			</section>
 
 			{/* Footer */}
-			<footer className="bg-slate-900 text-slate-300 py-12">
-				<div className="container mx-auto px-4">
-					<div className="text-center">
-						<div className="flex items-center justify-center space-x-2 mb-4">
-							<div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
-								<Home className="w-5 h-5 text-white" />
-							</div>
-							<span className="text-xl font-bold text-white">VIP Living Centers</span>
-						</div>
-						<p className="text-slate-400 mb-4">
-							Providing exceptional assisted living care with dignity and compassion
-						</p>
-						<p className="text-sm text-slate-500">
-							© 2024 VIP Living Centers. All rights reserved.
-						</p>
-					</div>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	);
 }
