@@ -172,7 +172,10 @@ export default function ServicesPage() {
 							designed to support your independence while ensuring your safety,
 							comfort, and well-being.
 						</p>
-						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+						<Link 
+						// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+						to={"/contact"}
+						>
 							<Button
 								size="lg"
 								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
@@ -349,7 +352,10 @@ export default function ServicesPage() {
 							your specific needs.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Link 
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to="/contact"
+							>
 								<Button
 									size="lg"
 									variant="secondary"

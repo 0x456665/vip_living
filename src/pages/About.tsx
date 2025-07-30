@@ -101,7 +101,10 @@ export default function AboutPage() {
 								</p>
 							</div>
 
-							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Link 
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to={"/contact"}
+							>
 								<Button
 									size="lg"
 									className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
@@ -387,7 +390,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* CTA Section */}
-			<section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+			<section className="py-20 bg-gradient-to-r from-green-800 to-emerald-300">
 				<div className="container mx-auto px-4 text-center">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
@@ -402,7 +405,10 @@ export default function AboutPage() {
 							Schedule a personal tour and see our caring community in action.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Link 
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to={"/contact"}
+							>
 								<Button
 									size="lg"
 									variant="secondary"

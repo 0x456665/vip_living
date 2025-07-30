@@ -43,7 +43,7 @@ export default function HomePage() {
 			<Header />
 
 			{/* Hero Section */}
-			<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+			<section className="relative min-h-screen pt-5 lg:pt-0 flex items-center justify-center overflow-hidden">
 				<div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-teal-50 to-slate-100" />
 				<div className="container mx-auto px-4 py-20 relative z-10">
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -77,7 +77,9 @@ export default function HomePage() {
 							</div>
 
 							<div className="flex flex-col sm:flex-row gap-4">
-								<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+								<Link
+									// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+									to="/contact">
 									<Button
 										size="lg"
 										className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
@@ -385,7 +387,9 @@ export default function HomePage() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						className="text-center mt-12">
-						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+						<Link
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to="/contact">
 							<Button
 								size="lg"
 								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">

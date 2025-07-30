@@ -33,7 +33,7 @@ export function Header() {
 							<img
 								src="/logo.png"
 								alt="logo"
-								className="w-50"
+								className="h-12"
 							/>
 							{/* <div c
 							{/* <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
@@ -61,7 +61,10 @@ export function Header() {
 								</Link>
 							</motion.div>
 						))}
-						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+						<Link 
+						// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+						to={"/contact"}
+						>
 							<Button className="bg-emerald-600 hover:bg-emerald-700">
 								Schedule Visit
 							</Button>
@@ -92,7 +95,10 @@ export function Header() {
 									{item.name}
 								</Link>
 							))}
-							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Link 
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to={"/contact"}
+							>
 								<Button className="bg-emerald-600 hover:bg-emerald-700 w-fit">
 									Schedule Visit
 								</Button>
