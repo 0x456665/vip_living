@@ -35,7 +35,7 @@ export default function ServicesPage() {
 				"Toileting Assistance",
 			],
 			color: "emerald",
-			img: "/services/personal.jpg",
+			img: "/services/new_image1.jpeg",
 		},
 		{
 			icon: Stethoscope,
@@ -95,7 +95,7 @@ export default function ServicesPage() {
 				"Special Events",
 			],
 			color: "teal",
-			img: "/services/nutrition.jpg",
+			img: "/services/new_image3.jpeg",
 		},
 		{
 			icon: Shield,
@@ -110,7 +110,7 @@ export default function ServicesPage() {
 				"On-Call Support",
 			],
 			color: "red",
-			img: "/services/service.jpeg",
+			img: "/services/new_image2.jpeg",
 		},
 	];
 

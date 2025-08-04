@@ -238,7 +238,7 @@ export default function AboutPage() {
 							className="relative">
 							<div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
 								<img
-									src="/about/smiling-woman.jpeg"
+									src="/about/new_image4.jpeg"
 									alt="VIP Living Centers interior common area"
 									className="object-cover h-full w-full object-center"
 								/>
