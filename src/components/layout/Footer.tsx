@@ -16,7 +16,7 @@ export function Footer() {
 							{/* <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
 								<Home className="w-5 h-5 text-white" />
 							</div>
-							<span className="text-xl font-bold text-white">VIP Living Centers</span> */}
+							<span className="text-xl font-bold text-white">VIP Living Center</span> */}
 							<img
 								src="/logo.png"
 								alt="logo"
@@ -85,7 +85,7 @@ export function Footer() {
 							</div>
 							<div className="flex items-center space-x-2">
 								<Mail className="w-4 h-4 text-emerald-400" />
-								<span>info@viplivingcenters.com</span>
+								<span>info@viplivingcenter.com</span>
 							</div>
 							<div className="flex items-start space-x-2">
 								<MapPin className="w-4 h-4 text-emerald-400 mt-0.5" />
@@ -97,7 +97,7 @@ export function Footer() {
 
 				<div className="border-t border-slate-800 pt-8 text-center">
 					<p className="text-sm text-slate-500">
-						© {currentYear} VIP Living Centers. All rights reserved. | Licensed Assisted
+						© {currentYear} VIP Living Center. All rights reserved. | Licensed Assisted
 						Living Facility
 					</p>
 				</div>

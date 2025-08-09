@@ -413,7 +413,7 @@ export default function HomePage() {
               Ready to Learn More?
             </h2>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Contact us today to schedule a tour and see why VIP Living Centers
+              Contact us today to schedule a tour and see why VIP Living Center
               is the perfect home for your loved one
             </p>
           </motion.div>
@@ -429,8 +429,8 @@ export default function HomePage() {
               {
                 icon: Mail,
                 title: "Email Us",
-                info: "info@viplivingcenters.com",
-                action: "mailto:info@viplivingcenters.com",
+                info: "info@viplivingcenter.com",
+                action: "mailto:info@viplivingcenter.com",
               },
               {
                 icon: MapPin,

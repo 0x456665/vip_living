@@ -1,6 +1,6 @@
 # VIP Living Centers Website
 
-This repository contains the modern, responsive website for VIP Living Centers, an assisted living facility. The website is designed to provide a warm, inviting, and informative online presence, showcasing their services, community life, and compassionate care.
+This repository contains the modern, responsive website for VIP Living Center, an assisted living facility. The website is designed to provide a warm, inviting, and informative online presence, showcasing their services, community life, and compassionate care.
 
 ## ✨ Features
 
