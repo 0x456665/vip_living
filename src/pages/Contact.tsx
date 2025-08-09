@@ -46,7 +46,7 @@ export default function ContactPage() {
 			info: "3219 Vinson Ct, Irving, TX 75060, USA",
 			description: "Tours available by appointment",
 			action: "#",
-			color: "purple",
+			color: "blue",
 		},
 	];
 
